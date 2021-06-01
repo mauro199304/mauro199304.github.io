@@ -5,11 +5,13 @@ while(true){
 $ok = file_get_contents('https://mauro199304.github.io/');
 
 $i = json_decode($ok, true)['AppRever'];
+//echo $i;
 
-if($i=="yes"){
+if($i=="no"){
 	echo "iniciando Reversa!!\n";
+	exit;
 }else{
-	"$n segundo";
+	echo "$n\n";
 }
 sleep(1);
 }
